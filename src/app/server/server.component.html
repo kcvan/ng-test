@@ -1,0 +1,10 @@
+<p>{{ 'Server' }} with ID {{ serverId }} is {{ serverStatus }}
+  with string interpolation or with a function {{ getServerStatus() }}
+</p>
+<!-- you can see that we are using string interpolation for the serverId
+and the serverStatus. even though serverId is a number, it can easily
+be converted into a string, which is what agular does
+but what about for  'Server'? string interpolation
+will recognize anything that outputs a string. that means you can
+write single line functions or ternary expressions as long
+as it outputs a string -->

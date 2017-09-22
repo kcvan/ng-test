@@ -1,0 +1,23 @@
+The Servers Component
+<!--
+instead of using the disabled property, we add
+brackets around it, telling angular that we're using property binding,
+and we want to dynamically add some property and disable the
+button through angular. this is changing the native
+<button
+class="btn btn-primary"
+disabled>
+Add Server
+</button> -->
+
+<!-- here we are setting the disabled property to an expression,
+that in this case will result to a boolean -->
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer">
+  Add Server
+</button>
+<p [innerText]="allowNewServer"></p>
+{{ allowNewServer }}
+<app-server></app-server>
+<app-server></app-server>
