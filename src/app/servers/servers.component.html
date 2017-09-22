@@ -12,12 +12,18 @@ Add Server
 
 <!-- here we are setting the disabled property to an expression,
 that in this case will result to a boolean -->
+
+<!-- here we also use (click) instead of onClick, it is angulars
+built in click function, and by using parenthesis we are signifying that
+we are binding to the click event -->
 <button
   class="btn btn-primary"
-  [disabled]="!allowNewServer">
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()">
   Add Server
 </button>
-<p [innerText]="allowNewServer"></p>
-{{ allowNewServer }}
+<p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
+<!-- <p [innerText]="allowNewServer"></p> -->
+<!-- {{ allowNewServer }} -->
