@@ -8,6 +8,7 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from './successAlert/successAlert.component';
 import { WarningAlertComponent } from './warningAlert/warningAlert.component';
+import { AssignmentTwoComponent } from './assignment-two/assignment-two.component';
 
 //currently our webpack bundles our files automatically so you do not need
 //a file extension
@@ -28,7 +29,8 @@ import { WarningAlertComponent } from './warningAlert/warningAlert.component';
     ServerComponent,
     ServersComponent,
     SuccessAlertComponent,
-    WarningAlertComponent
+    WarningAlertComponent,
+    AssignmentTwoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+<div>
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="username">
+  <p>{{ username }}</p>
+  <button
+    [disabled]="username === ''"
+    class="btn btn-primary"
+    (click)="username = ''">
+    click meee
+  </button>
+</div>

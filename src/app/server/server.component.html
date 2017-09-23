@@ -1,4 +1,4 @@
-<p>{{ 'Server' }} with ID {{ serverId }} is {{ serverStatus }}
+<p [ngStyle]="{ backgroundColor: getColor() }">{{ 'Server' }} with ID {{ serverId }} is {{ serverStatus }}
   with string interpolation or with a function {{ getServerStatus() }}
 </p>
 <!-- you can see that we are using string interpolation for the serverId
