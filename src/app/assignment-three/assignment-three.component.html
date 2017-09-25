@@ -1,0 +1,15 @@
+<section>
+  <button
+    class="btn btn-primary"
+    (click)="toggleParagraph()">
+    Display Details
+  </button>
+  <p *ngIf="isShown">herroooo</p>
+  <p *ngFor="let buttonClicks of buttonClicksArray; let i = index">
+    <span
+      [ngStyle]="{ background: i >= 4 ? 'blue' : 'transparent'}"
+      [ngClass]="{ 'white-text': i >= 4 }">
+      {{ buttonClicks }}
+    </span>
+  </p>
+</section>

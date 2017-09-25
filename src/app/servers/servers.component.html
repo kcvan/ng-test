@@ -46,8 +46,8 @@ gives us a lot of data fromt he input -->
     No server was created
   </p>
 </ng-template>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
 <!-- <p [innerText]="allowNewServer"></p> -->
 <!-- {{ allowNewServer }} -->
 <!-- <assignment-two></assignment-two> -->
+<assignment-three></assignment-three>

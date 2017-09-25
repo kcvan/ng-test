@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from './successAlert/successAlert.component';
 import { WarningAlertComponent } from './warningAlert/warningAlert.component';
 import { AssignmentTwoComponent } from './assignment-two/assignment-two.component';
+import { AssignmentThreeComponent } from './assignment-three/assignment-three.component';
 
 //currently our webpack bundles our files automatically so you do not need
 //a file extension
@@ -30,7 +31,8 @@ import { AssignmentTwoComponent } from './assignment-two/assignment-two.componen
     ServersComponent,
     SuccessAlertComponent,
     WarningAlertComponent,
-    AssignmentTwoComponent
+    AssignmentTwoComponent,
+    AssignmentThreeComponent
   ],
   imports: [
     BrowserModule,
